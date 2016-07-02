@@ -4,7 +4,10 @@ var Readme = React.createClass({
     render: function() {
         return (
             <div className='columns small-12 medium-4'>
-              <p>This is a Web App to preview markdown as part of a submission for <a href='www.freecodecamp.com'>Free Code Camp</a>. </p>
+              <h4>Intro</h4>
+              <p>
+                Markdown is a lightweight markup language that allows people to generate HTML with different plain text syntexes. It was invented by <a href="https://daringfireball.net/projects/markdown/">John Gruber</a> in 2004. This web app lets you generate HTML using Markdown you type in the form. You can find a <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">list of instructions here</a>
+              </p>
             </div>
         )
     }

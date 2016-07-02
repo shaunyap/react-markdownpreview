@@ -10,8 +10,8 @@ export var MdForm = React.createClass({
     var {dispatch, markdown} = this.props;
     return (
       <div className="MarkdownEditor columns small-12 medium-4">
-        <h3>Input</h3>
-        <textarea ref="textarea" defaultValue={this.state.value} onChange={() => {
+        <h4>Input</h4>
+        <textarea rows ="6" ref="textarea" defaultValue={this.state.value} onChange={() => {
             dispatch(actions.setMarkdown(this.refs.textarea.value));
           }} />
       </div>
