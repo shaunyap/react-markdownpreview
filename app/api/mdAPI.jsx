@@ -1,8 +1,8 @@
 var Remarkable = require('remarkable');
 
 module.exports = {
-  renderMd: function(Markdown) {
+  renderMd: function(markdown) {
     var md = new Remarkable();
-    return {__html: md.render(Markdown)};
+    return {__html: md.render(markdown)};
   }
 }

@@ -5,7 +5,7 @@ import {MarkdownReducer} from 'reducers'
 
 export var configure = (initialState = {}) => {
   var reducer = redux.combineReducers({
-    Markdown: MarkdownReducer
+    markdown: MarkdownReducer
   });
 
   var store = redux.createStore(reducer, initialState, redux.compose(

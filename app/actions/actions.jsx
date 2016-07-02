@@ -1,6 +1,6 @@
-export var setMarkdown = (Markdown) => {
+export var setMarkdown = (markdown) => {
   return {
     type: 'SET_MARKDOWN',
-    Markdown
+    markdown
   };
 };

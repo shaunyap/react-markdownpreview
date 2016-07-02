@@ -15,7 +15,7 @@ var MdApp = React.createClass({
             <div>
               <Readme/>
               <MdForm/>
-              <MdPreview markdown={this.state.markdown}/>
+              <MdPreview markdown='help'/>
             </div>
         );
     }
