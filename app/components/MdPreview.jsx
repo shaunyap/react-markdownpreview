@@ -5,7 +5,12 @@ import MdForm from 'MdForm';
 
 export var MdPreview = React.createClass({
     getInitialState: function() {
-      return {rawMarkdown: 'Start typing in the form and *this* will be updated'};
+      return {markdown: 'Start typing in the form and *this* will be updated'};
+    },
+    componentDidUpdate: function(prevProps, prevState) {
+        if (this.state.markdown !== prevState.markdown) {
+          dispatch(actions.updatePreiew(this.state.markdown));
+        }
     },
     render: function() {
       var renderMd = (rawMarkdown) => {
@@ -15,7 +20,7 @@ export var MdPreview = React.createClass({
       };
       return (
           <div className='columns small-12 medium-4 content'
-          dangerouslySetInnerHTML={renderMd(this.state.rawMarkdown)} />
+          dangerouslySetInnerHTML={renderMd(this.props.markdown)} />
       )
     }
 });

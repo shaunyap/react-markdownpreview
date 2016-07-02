@@ -4,3 +4,10 @@ export var setMarkdown = (markdown) => {
     markdown
   };
 };
+
+export var updatePreview = (markdown) => {
+  return {
+    type: 'UPDATE_PREVIEW',
+    markdown
+  };
+};
