@@ -1,5 +1,5 @@
 {
-  "name": "Markdown Previewer",
+  "name": "MarkdownPreviewer",
   "version": "1.0.0",
   "description": "Simple react Markdown Preview app",
   "main": "index.js",
